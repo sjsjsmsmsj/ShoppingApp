@@ -19,9 +19,9 @@ const Signup = () => {
     return (
         <>
             <Card style={{ width: "50%" }}>
-                <Title level={2}>Sign up to your account</Title>
+                <Title level={2}>Create an account</Title>
                 <Paragraph type={"secondary"}>
-                    Welcome back! Please enter your details.
+                    Start 30 days free trial.
                 </Paragraph>
 
                 <Form layout="vertical" form={form} disabled={isLoading} onFinish={handleLogin}>
@@ -35,7 +35,7 @@ const Signup = () => {
                             },
                         ]}
                     >
-                        <Input allowClear />
+                        <Input placeholder="Enter your name" allowClear />
                     </Form.Item>
                 </Form>
 
@@ -51,7 +51,7 @@ const Signup = () => {
                             },
                         ]}
                     >
-                        <Input type="email" maxLenght={100} allowClear />
+                        <Input placeholder="Enter your email" type="email" maxLenght={100} allowClear />
                     </Form.Item>
                 </Form>
 
@@ -68,7 +68,7 @@ const Signup = () => {
                             },
                         ]}
                     >
-                        <Input.Password type="password" maxLenght={100} />
+                        <Input.Password type="password" maxLenght={100} placeholder="Enter your password" />
                     </Form.Item>
                 </Form>
 
@@ -80,8 +80,8 @@ const Signup = () => {
 
                 <div className="mt-4 text-center">
                     <Space>
-                        <Text>Already have an account?</Text>
-                        <Link to={"/"}>Login</Link>
+                        <Text type={"secondary"}>Already have an account?</Text>
+                        <Link to={"/login"}>Login</Link>
                     </Space>
                 </div>
             </Card>

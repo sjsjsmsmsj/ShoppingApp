@@ -17,7 +17,7 @@ const AuthScreen = () => {
                 <div className="col-8 content-center">
                     <BrowserRouter>
                         <Routes>
-                            <Route path="/" element={<Login />} />
+                            <Route path="/login" element={<Login />} />
                             <Route path="/sign-up" element={<Signup />} />
                         </Routes>
                     </BrowserRouter>
